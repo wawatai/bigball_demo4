@@ -1,0 +1,355 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i,
+center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "微軟正黑體";
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+}
+
+main {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  font-family: "微軟正黑體";
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0px;
+}
+
+select, input {
+  font-family: "微軟正黑體";
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background: #f46b09;
+}
+html body {
+  width: 100%;
+  min-width: 1200px;
+  height: auto;
+  overflow: hidden;
+}
+html body main {
+  width: 100%;
+  height: 1000px;
+}
+html body main article {
+  width: 1100px;
+  height: 100%;
+  margin: 0px auto;
+}
+html body main article section {
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+html body main article section.top .logo {
+  width: 614px;
+  height: 125px;
+  background: url("../images/logo.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  left: 234px;
+  top: 39px;
+  z-index: 10;
+}
+html body main article section.top .inputbox {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 212px;
+  left: 386px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+html body main article section.top .inputbox .box {
+  width: auto;
+  height: auto;
+}
+html body main article section.top .inputbox .box label {
+  display: block;
+  width: auto;
+  height: auto;
+  position: relative;
+  margin-bottom: 25px;
+}
+html body main article section.top .inputbox .box label:last-child {
+  margin-bottom: 30px;
+}
+html body main article section.top .inputbox .box label input {
+  width: 325px;
+  height: 50px;
+  background: #000000;
+  border-radius: 5px;
+  border: solid 1px #eadb9f;
+  color: #ffffff;
+  font-size: 25px;
+  padding-left: 10px;
+}
+html body main article section.top .inputbox .box label input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+html body main article section.top .inputbox .box label input::-moz-placeholder {
+  color: #ffffff;
+}
+html body main article section.top .inputbox .box label input:-ms-input-placeholder {
+  color: #ffffff;
+}
+html body main article section.top .inputbox .box label input::-ms-input-placeholder {
+  color: #ffffff;
+}
+html body main article section.top .inputbox .box label input::placeholder {
+  color: #ffffff;
+}
+html body main article section.top .inputbox button {
+  width: 329px;
+  height: 70px;
+  background: url("../images/btn.png") no-repeat;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+html body main article section.top .inputbox button:hover, html body main article section.top .inputbox button:active, html body main article section.top .inputbox button.active {
+  background-position-y: 100%;
+}
+html body main article section.bottom .base {
+  width: 659px;
+  height: 392px;
+  background: url("../images/base.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  left: 220px;
+  top: -337px;
+  z-index: 3;
+}
+html body main article section.bottom .img1 {
+  width: 901px;
+  height: 838px;
+  background: url("../images/img1.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  right: -172px;
+  top: -418px;
+  -webkit-animation: img1 0.3s ease-out 0s;
+          animation: img1 0.3s ease-out 0s;
+  z-index: 4;
+}
+html body main article section.bottom .img1_1 {
+  width: 1414px;
+  height: 776px;
+  background: url("../images/img1_1.png") no-repeat;
+  position: absolute;
+  right: 94px;
+  top: -405px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation: lag 0.25s linear 0s, img1_1 0.2s ease-out 0.25s;
+          animation: lag 0.25s linear 0s, img1_1 0.2s ease-out 0.25s;
+  z-index: 1;
+}
+html body main article section.bottom .img2 {
+  width: 714px;
+  height: 841px;
+  background: url("../images/img2.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  left: -318px;
+  top: -432px;
+  -webkit-animation: lag 0.3s linear 0s, img2 0.3s ease-out 0.3s;
+          animation: lag 0.3s linear 0s, img2 0.3s ease-out 0.3s;
+  z-index: 4;
+}
+html body main article section.bottom .img2_1 {
+  width: 1546px;
+  height: 831px;
+  background: url("../images/img2_1.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  left: -40px;
+  top: -480px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-animation: lag 0.55s linear 0s, img2_1 0.2s ease-out 0.55s;
+          animation: lag 0.55s linear 0s, img2_1 0.2s ease-out 0.55s;
+  z-index: 2;
+}
+html body .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 1200px;
+  height: 100%;
+  background: url("../images/bg.jpg") no-repeat top center;
+  z-index: -999;
+}
+
+@-webkit-keyframes img1 {
+  0% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes img1 {
+  0% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@-webkit-keyframes img1_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleX(0.8);
+            transform: scaleX(0.8);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+@keyframes img1_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleX(0.8);
+            transform: scaleX(0.8);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+@-webkit-keyframes img2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes img2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@-webkit-keyframes img2_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleX(0.9);
+            transform: scaleX(0.9);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+@keyframes img2_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleX(0.9);
+            transform: scaleX(0.9);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+@-webkit-keyframes lag {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes lag {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
